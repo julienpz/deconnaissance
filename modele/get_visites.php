@@ -3,7 +3,7 @@
 header('content-type:application/json');
 
 //connexion base bd_deconnaissance
-$bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'root', 'patrick');
+$bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'root', 'motdepasse');
 
 $req = $bdd->prepare('SELECT date_visite, count(ip_visiteur) as nb_visites FROM stat_visites GROUP BY date_visite ORDER BY date_visite');
 
