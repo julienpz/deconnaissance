@@ -11,7 +11,7 @@ if (!isset($_COOKIE['user_ip']))
 	try
 	{
 	  //connexion base bd_deconnaissance
-	  $bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'julien', 'julien300380');
+	  $bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'root', 'motdepasse');
 	  array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION);
 	}
 
@@ -29,7 +29,7 @@ if (!isset($_COOKIE['user_ip']))
 	}
 
 //connexion base bd_deconnaissance
-$bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'julien', 'julien300380');
+$bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'root', 'motdepasse');
 
 
 // On choisit une carte au hasard parmi les cartes non encore posées
