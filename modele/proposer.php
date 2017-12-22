@@ -19,7 +19,7 @@ $PropAuteur = strip_tags(htmlspecialchars($_POST['PropAuteur']));
 
 
 //connexion base bd_deconnaissance
-$bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'julien', 'julien300380');
+$bdd = new PDO('mysql:host=localhost;dbname=bd_deconnaissance;charset=utf8', 'root', 'motdepasse');
 	
 // On ajoute la proposition dans la table cartes
 $req = $bdd->prepare('INSERT INTO cartes(theme, question, indice, reponse, explication, auteur, statut) VALUES (:PropTheme, :PropQuestion, :PropIndice, :PropReponse, :PropExplication, :PropAuteur, :statut)');
